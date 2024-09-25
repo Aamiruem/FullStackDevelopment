@@ -17,5 +17,7 @@
 			"path": "../../../../../OneDrive/Desktop/Full-Stack-Web-Development/HTML"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "FullStackDevelopment"
+	}
 }
