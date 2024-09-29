@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid red;
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        #title{
+            text-align: center;
+            background-color : lightyellow;
+        }
+        #container1{
+            /* display: block; */
+            visibility:visible;
+            background: #ccc;
+        }
+        #container2{
+            /* display: inline; */
+            visibility:hidden;
+            background: #ffaabb;
+        }
+        #container3{
+            /* display: inline-block; */
+            /* visibility:collapse; */
+            background: #00ccff;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="title"> Display v/s Visibility Demo</h3>
+    <div id="container1">This is some text inside the div1</div>
+    <div id="container2">This is some text inside the div2</div>
+    <div id="container3">This is some text inside the div3</div>
+</body>
+</html>
