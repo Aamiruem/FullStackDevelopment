@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Styling Example</title>
+    <style>
+        /* Basic Styling */
+        .container {
+            width: 500px; /* Set width */
+            height: 200px; /* Set height */
+            background-color: #f0f0f0; /* Set background color */
+            border: 1px solid #ccc; /* Set border */
+            padding: 20px; /* Add padding inside the div */
+            margin: 20px auto; /* Add margin outside the div */
+            display: block; /* Default display property, but can be changed */
+            position: relative; /* Set positioning to relative */
+            box-sizing: border-box; /* Include padding and border in width and height */
+        }
+
+        /* Flexbox Layout */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background-color: #e0e0e0;
+            padding: 10px;
+        }
+
+        .flex-item {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            border: 1px solid #aaa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+            background-color: #d0d0d0;
+        }
+
+        .grid-item {
+            background-color: #bbb;
+            border: 1px solid #999;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Responsive Design using Media Queries */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                height: auto;
+            }
+            .flex-container, .grid-container {
+                flex-direction: column;
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Basic Div with Styling -->
+    <div class="container">
+        <h2>This is a heading inside a styled div</h2>
+        <p>This is some text inside a styled div.</p>
+    </div>
+
+    <!-- Flexbox Layout Example -->
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    <!-- Grid Layout Example -->
+    <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+    </div>
+
+</body>
+</html>
